@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>CRUD</title>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>DATA BASE - CLIENTES</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a class="menuLink" href="../index.html">Home</a></li>
+                <li><a class="menuLink" href="cadastrar.html">Cadastrar</a></li>
+            </ul>
+        </nav>
+        
+
+        <section class="contentForm">
+            <h1>CADASTRO DE CLIENTES</h1>
+            <form id="myForm" >
+                <div class="myForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+
+                <div >
+                    <button onclick="cadastrar()" id="btn-cadastrar" class="btnForm" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </section>
+        
+        <footer>
+            <p>Desenvolvido por Felippe Matheo©2024</p>
+        </footer>
+    </main>
+
+    <script src="../utils.js"></script>
+    <script src="cadastrar.js"></script>
+</body>
+</html>
