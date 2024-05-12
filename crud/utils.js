@@ -1,5 +1,5 @@
 
-const urlServer = "https://66302735c92f351c03d923d2.mockapi.io/cliente";
+const urlServer = "https://66302735c92f351c03d923d2.mockapi.io/cliente/";
 
 let btns = document.querySelectorAll('a','.menuLink');
 let currentUrl = window.location.href;

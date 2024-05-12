@@ -11,7 +11,7 @@ const id = params.get('id');
 // ==================================================
 // Modo Editar
 if (id) {
-    var name = document.querySelector('#name');
+    var name1 = document.querySelector('#name1');
     var email = document.querySelector('#email');
     var age = document.querySelector('#age');
 
@@ -19,7 +19,7 @@ if (id) {
     fetch(`${urlServer}${id}`)
     .then(response => response.json())
     .then(data => {
-        name.value = data.name;
+        name1.value = data.name1;
         email.value = data.email;
         age.value = data.age ;
     });
@@ -34,13 +34,13 @@ if (id) {
 
 
 function atualizar() {
-    var name = document.querySelector('#name').value;
+    var name1 = document.querySelector('#name1').value;
     var email = document.querySelector('#email').value;
     var age = document.querySelector('#age').value;
 
 
     var cliente = {
-        "name": name,
+        "name1": name1,
         "email": email,
         "age": age
     };
@@ -60,13 +60,13 @@ function atualizar() {
 // ==================================================
 // Modo Cadastrar
 function cadastrar() {
-    var name = document.querySelector('#name').value;
+    var name1 = document.querySelector('#name1').value;
     var email = document.querySelector('#email').value;
     var age = document.querySelector('#age').value;
 
 
     var cliente = {
-        "name": name,
+        "name1": name1,
         "email": email,
         "age": age
     };

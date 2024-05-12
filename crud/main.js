@@ -21,7 +21,7 @@ function listaClientes() {
                 }  
 
 
-                a.innerHTML = ` ${cliente.name} - ${cliente.email} - (${cliente.age})`;
+                a.innerHTML = ` ${cliente.name1} - ${cliente.email} - (${cliente.age})`;
                 a.href = `cadastrar/cadastrar.html?id=${cliente.id}`;
                 a.classList.add("linkCliente");
 
